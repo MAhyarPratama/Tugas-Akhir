@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="assets/Fox.png" type="image/svg+xml" />
+
+   <!--=============== REMIXICONS ===============-->
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
+
+   <style>
+      body, html {
+         height: 100%;
+         margin: 0;
+         overflow: hidden;
+      }
+
+      .login {
+         position: relative;
+         height: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+
+      .login__video {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         z-index: -1;
+      }
+
+      .login__form {
+ 
+         z-index: 1;
+      }
+   </style>
+
+   <title>Wibbu & Review</title>
+</head>
+<body>
+   <div class="login">
+      <video autoplay loop muted class="login__video">
+         <source src="assets/klee-walking-pixel-genshin-impact-desktop-wallpaperwaifu.com.mp4" type="video/mp4">
+         Your browser does not support the video tag.
+      </video>
+
+      <form action="" class="login__form">
+         <h1 class="login__title">Login</h1>
+
+         <div class="login__content">
+            <div class="login__box">
+               <i class="ri-user-3-line login__icon"></i>
+
+               <div class="login__box-input">
+                  <input type="email" required class="login__input" id="login-email" placeholder=" ">
+                  <label for="login-email" class="login__label">Email</label>
+               </div>
+            </div>
+
+            <div class="login__box">
+               <i class="ri-lock-2-line login__icon"></i>
+
+               <div class="login__box-input">
+                  <input type="password" required class="login__input" id="login-pass" placeholder=" ">
+                  <label for="login-pass" class="login__label">Password</label>
+                  <i class="ri-eye-off-line login__eye" id="login-eye"></i>
+               </div>
+            </div>
+         </div>
+
+         <div class="login__check">
+            <div class="login__check-group">
+               <input type="checkbox" class="login__check-input" id="login-check">
+               <label for="login-check" class="login__check-label">Remember me</label>
+            </div>
+
+            <a href="Home.html" class="login__forgot">Forgot Password?</a>
+         </div>
+
+         <button type="submit" class="login__button">Login</button>
+
+         <p class="login__register">
+            Don't have an account? <a href="Home.html">Register</a>
+         </p>
+      </form>
+   </div>
+   
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
+</body>
+</html>
